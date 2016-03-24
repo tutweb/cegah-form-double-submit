@@ -35,7 +35,7 @@
 <script>
 function ajaxSend() { 
   var valid = true;
-  valid = checkEmpty($("#judul"));
+  valid = checkValid($("#judul"));
   if(valid) {
     var judul = $("#judul").val();
     var konten = $("#konten").val();
@@ -53,7 +53,7 @@ function ajaxSend() {
   }
 }
 
-function checkEmpty(obj) {
+function checkValid(obj) {
   var name = $(obj).attr("name");
   $("."+name+"-validation").html(""); 
   $(obj).css("border","");

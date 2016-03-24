@@ -1,5 +1,5 @@
 <?php 
-	if(!empty($_POST["title"])) {
-		print "Title: " . $_POST["title"];
+	if(!empty($_POST["judul"])) {
+		print "Judul: " . $_POST["judul"];
 	}
 ?>
